@@ -1,0 +1,799 @@
+/*
+| Hot fix style for Jobsmaster
+| By Emeka Osuagwu
+| emekaosuagwuandela@gmail.com
+*/
+
+.short li:nth-child(-n+3)
+{
+    display: none;
+}
+
+.long li:nth-child(-n+3)
+{
+    display: block;
+}
+.more{
+  color: red;
+}
+
+
+/*yandex-pagination*/
+.yandex-pagination
+{
+  list-style: none;
+}
+
+
+.yandex-pagination li
+{
+  background-color: #337ab7;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  color: #fff;
+  cursor: default;
+  margin: 10px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 38px;
+  line-height: 38px;
+  margin-left: -4px;
+  min-width: 38px;
+  text-align: center;
+  white-space: normal;
+}
+
+.yandex-pagination li a
+{
+  color: #fff;
+}
+
+.yandex-pagination-single
+{
+  list-style: none;
+  font-size: 20px; 
+  padding: 0px;
+}
+.yandex-pagination-single li
+{
+  list-style: none;
+  display: inline;
+  font-size: 20px; 
+}
+
+
+
+
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+a {
+  color: #00c;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.index-content {
+  width: 65%;
+  margin: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .index-content {
+    width: 100%;
+  }
+}
+.index-content .container-fluid {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.index-content .container-fluid:last-child {
+  margin-right: 0;
+}
+.index-content .container-fluid .left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 44.55627%;
+}
+.index-content .container-fluid .left:last-child {
+  margin-right: 0;
+}
+.index-content .container-fluid .left h3 {
+  margin-top: 0px;
+}
+.index-content .container-fluid .right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 53.08608%;
+}
+.index-content .container-fluid .right:last-child {
+  margin-right: 0;
+}
+
+.share {
+  font-size: 14px;
+}
+.share p {
+  display: inline-block;
+}
+.share i {
+  margin-left: 10px;
+}
+
+.main-content {
+  margin: auto;
+  width: 75%;
+  margin-top: 25px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+.input-sm {
+  height: 25px;
+}
+
+.form-button {
+  display: block;
+}
+.form-button .button {
+  margin: auto;
+  width: 100%;
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  color: #777;
+  text-align: left;
+}
+
+.search-bars {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.search-bars:last-child {
+  margin-right: 0;
+}
+.search-bars .search-what {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+.search-bars .search-what:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .search-bars .search-what {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .search-bars .search-what:last-child {
+    margin-right: 0;
+  }
+}
+.search-bars .search-what span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.search-bars .search-what label {
+  color: #f60;
+  font-size: 16px;
+}
+.search-bars .search-where {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 37.73243%;
+}
+.search-bars .search-where:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .search-bars .search-where {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .search-bars .search-where:last-child {
+    margin-right: 0;
+  }
+}
+.search-bars .search-where span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.search-bars .search-where label {
+  color: #f60;
+  font-size: 16px;
+}
+.search-bars .find-button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 17.2609%;
+}
+.search-bars .find-button:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .search-bars .find-button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .search-bars .find-button:last-child {
+    margin-right: 0;
+  }
+}
+.search-bars .find-button span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.search-bars .find-button > button {
+  font-weight: 900;
+}
+
+.job-search {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.job-search::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.job-search .container-fluid .logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+.job-search .container-fluid .logo:last-child {
+  margin-right: 0;
+}
+.job-search .container-fluid .logo img {
+  width: 100%;
+}
+.job-search .container-fluid .search-bars {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-bottom: 20px;
+}
+.job-search .container-fluid .search-bars:last-child {
+  margin-right: 0;
+}
+.job-search .container-fluid .search-bars .search-what {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 31.58425%;
+}
+.job-search .container-fluid .search-bars .search-what:last-child {
+  margin-right: 0;
+}
+.job-search .container-fluid .search-bars .search-what span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.job-search .container-fluid .search-bars .search-what label {
+  color: #f60;
+  font-size: 16px;
+}
+.job-search .container-fluid .search-bars .search-where {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 30.09696%;
+}
+.job-search .container-fluid .search-bars .search-where:last-child {
+  margin-right: 0;
+}
+.job-search .container-fluid .search-bars .search-where span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.job-search .container-fluid .search-bars .search-where label {
+  color: #f60;
+  font-size: 16px;
+}
+.job-search .container-fluid .search-bars .find-button {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 16.71127%;
+}
+.job-search .container-fluid .search-bars .find-button:last-child {
+  margin-right: 0;
+}
+.job-search .container-fluid .search-bars .find-button span {
+  color: #aaa;
+  font-size: 11px;
+  padding-left: 3px;
+}
+.job-search .container-fluid .search-bars .find-button > button {
+  font-weight: 900;
+}
+
+.upload-resume {
+  display: block;
+  margin-top: 15px;
+}
+
+.how-to-content {
+  margin-top: 30px;
+}
+
+.popular-search .table > tbody > tr > td, .popular-search .table > tbody > tr > th, .popular-search .table > tfoot > tr > td, .popular-search .table > tfoot > tr > th, .popular-search .table > thead > tr > td, .popular-search .table > thead > tr > th {
+  padding: 2px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: none;
+  font-size: 13px;
+}
+.popular-search .table > tbody {
+  border-bottom: 1px solid #f60;
+  border-top: 1px solid #f60;
+}
+
+.company-credits p {
+  margin: 0px;
+}
+.company-credits .extra {
+  margin-top: 15px;
+}
+
+.not-visible {
+  visibility: hidden;
+  margin-bottom: 7px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  height: 25px;
+  background-color: #f5f5f5;
+  bottom: 0;
+}
+.footer .container-fluid a {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 10px;
+}
+
+.navbar {
+  min-height: 20px;
+  margin-bottom: 10px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #00c;
+}
+
+.yellow {
+  color: #f60 !important;
+}
+
+.blue {
+  background-color: #1965fe;
+  color: white;
+}
+
+.adjust {
+  padding: 10px 35px;
+  border-radius: 4px;
+  background-color: #3276fe;
+  color: white;
+}
+
+.how-to-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.how-to-content:last-child {
+  margin-right: 0;
+}
+.how-to-content .left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.how-to-content .left:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .how-to-content .left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .how-to-content .left:last-child {
+    margin-right: 0;
+  }
+}
+.how-to-content .left .process {
+  margin-bottom: 15px;
+}
+.how-to-content .left .process .process-image {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 47.94454%;
+}
+.how-to-content .left .process .process-image:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .how-to-content .left .process .process-image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .how-to-content .left .process .process-image:last-child {
+    margin-right: 0;
+  }
+}
+.how-to-content .left .process .process-image iframe {
+  width: 100%;
+}
+.how-to-content .left .process .process-image img {
+  width: 100%;
+}
+.how-to-content .left .process .process-image .watch {
+  position: absolute;
+  background-color: #f60;
+  color: white;
+  margin-top: -25px;
+  width: 16.8%;
+}
+.how-to-content .left .process .process-image .watch p {
+  margin: 0px;
+  padding-left: 5px;
+}
+.how-to-content .left .process .process-details {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 47.94454%;
+}
+.how-to-content .left .process .process-details:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .how-to-content .left .process .process-details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .how-to-content .left .process .process-details:last-child {
+    margin-right: 0;
+  }
+}
+.how-to-content .left .process .process-details h4 {
+  margin-bottom: 3px;
+}
+.how-to-content .right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+.how-to-content .right:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .how-to-content .right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .how-to-content .right:last-child {
+    margin-right: 0;
+  }
+}
+.how-to-content .right .right-story {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.how-to-content .right .right-story p {
+  margin-bottom: 15px;
+  line-height: 1.7em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-header {
+    background: url(../../img/jobsmaster-Nigeria.png) 2% 55% no-repeat;
+    background-size: auto 50px;
+  }
+}
+
+.auto-complete-what, .auto-complete-where {
+  border: 1px solid #ccc;
+  color: #555;
+  background: #fff;
+  position: absolute;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 50.52714%;
+  margin-top: -17px;
+  z-index: 1;
+}
+.auto-complete-what:last-child, .auto-complete-where:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .auto-complete-what, .auto-complete-where {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 90.19073%;
+  }
+  .auto-complete-what:last-child, .auto-complete-where:last-child {
+    margin-right: 0;
+  }
+}
+.auto-complete-what .auto-item, .auto-complete-where .auto-item {
+  padding-left: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.auto-complete-what .auto-item:hover, .auto-complete-where .auto-item:hover {
+  background-color: #00c;
+  color: white;
+}
+.auto-complete-what .auto-item p, .auto-complete-where .auto-item p {
+  margin: 0px;
+  font-weight: 600;
+}
+
+.auto-complete-where {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.65825%;
+}
+.auto-complete-where:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .auto-complete-where {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 90.19073%;
+  }
+  .auto-complete-where:last-child {
+    margin-right: 0;
+  }
+}
+
+.email-alert {
+  background-color: #EBEBEB;
+  padding: 15px;
+  border: 1px solid #d2d2d2;
+}
+.email-alert .form-group {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.email-alert .form-group:last-child {
+  margin-right: 0;
+}
+.email-alert .form-group label {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  font-size: 12px;
+}
+.email-alert .form-group label:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .email-alert .form-group label {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .email-alert .form-group label:last-child {
+    margin-right: 0;
+  }
+}
+.email-alert .form-group input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.email-alert .form-group input:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .email-alert .form-group input {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .email-alert .form-group input:last-child {
+    margin-right: 0;
+  }
+}
+.email-alert .form-group select {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.email-alert .form-group select:last-child {
+  margin-right: 0;
+}
+.email-alert .form-button button {
+  margin-bottom: 15px;
+}
+
+.search-results .container-fluid {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.search-results .container-fluid:last-child {
+  margin-right: 0;
+}
+.search-results .container-fluid .sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+.search-results .container-fluid .sidebar:last-child {
+  margin-right: 0;
+}
+.search-results .container-fluid .sidebar .drop {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.search-results .container-fluid .sidebar .drop > li {
+  font-weight: 600;
+}
+.search-results .container-fluid .search-result-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 44.55627%;
+}
+.search-results .container-fluid .search-result-content:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .search-results .container-fluid .search-result-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .search-results .container-fluid .search-result-content:last-child {
+    margin-right: 0;
+  }
+}
+.search-results .container-fluid .search-result-content .result-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.search-results .container-fluid .search-result-content .result-item h4 {
+  margin: 0px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.search-results .container-fluid .search-result-content .result-item p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.search-results .container-fluid .search-result-content .random-links {
+  margin-top: 20px;
+  border-top: 2px solid #f60;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.search-results .container-fluid .subscriptions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: #ebebeb;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.search-results .container-fluid .subscriptions:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .search-results .container-fluid .subscriptions {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .search-results .container-fluid .subscriptions:last-child {
+    margin-right: 0;
+  }
+}
+.search-results .container-fluid .subscriptions p {
+  margin-top: 10px;
+}
+.search-results .container-fluid .subscriptions button {
+  margin-top: 5px;
+}
+
+footer > .container-fluid > a {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */

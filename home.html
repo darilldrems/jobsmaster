@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Search result for  jobs in  on Jobsmaster Jobs search engine.">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="/static/img/jobsmaster-favicon.png"> -->
+        <link rel="shortcut icon" type="image/png" href="/static/img/jobsmaster-favicon.png"/>
+
+        <title>Jobsmaster Nigeria - Search jobs online</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="http://jobsmaster.com.ng/static/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="http://jobsmaster.com.ng/static/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- google analytics code -->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-68408633-1', 'auto');
+              ga('send', 'pageview');
+
+        </script>
+    
+        <script>
+            $('.collapse').collapse();
+        </script>
+    </head>
+
+    <body>
+
+        <!-- Static navbar -->
+        
+            <!-- <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                    
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Find Jobs</a></li>
+                        <li><a href="#">Find Resumes</a></li>
+                        <li><a href="#">Employers / Post Job</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="yellow">Upload your resume</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <br/>
+        <br/>
+        
+
+
+        
+        <div class="job-search hidden-xs">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="/"><img src="http://jobsmaster.com.ng//static/img/jobsmaster-Nigeria.png" /></a>
+                    
+                </div>
+                <div class="search-bars">
+                    <form action="/search" method="GET">
+                        <input type="hidden" name="page" value="1">
+                    <div class="search-what">
+                        <label>what</label>
+
+                        <input type="text" name="q" value="" class="form-control" />
+                        <span>job title, keywords or company name</span>
+                        
+                        <!-- <div class="auto-complete-what hidden">
+                            <div class="auto-item">
+                                <p>Engineering</p>
+                            </div>
+                            <div class="auto-item">
+                                <p>English</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="search-where">
+                        <label>where</label>
+                        <input type="text" name="location" value="" class="form-control" />
+                        <span>city, state</span>
+                        
+                       <!--  <div class="auto-complete-where hidden">
+                            <div class="auto-item">
+                                <p>Lagos NG</p>
+                            </div>
+                            <div class="auto-item">
+                                <p>Ibadan NG</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="find-button">
+                        <label class="not-visible">caption</label>
+                        <button type="submit" class="form-control btn-xs blue">Find Jobs</button>
+                        <!-- <span><a href="">Advanced Job Search</a></span> -->
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                    
+                </div>
+                <!-- <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Find Jobs</a></li>
+                        <li><a href="#">Find Resumes</a></li>
+                        <li><a href="#">Employers / Post Job</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="yellow">Upload your resume</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </nav> 
+
+        <div class="search-bars visible-xs" id="navbar nav navbar-nav">
+            <form method="GET" action="/search">
+                <input type="hidden" name="page" value="1">
+                
+                <div class="search-what col-xs-12">
+                    <label class = "navbr-brand">what</label>
+                    <input type="text" name="q" class="form-control" />
+                    <p> </p>
+
+                    <!-- <div class="auto-complete-what hidden">
+                        <div class="auto-item">
+                            <p>Engineering</p>
+                        </div>
+                        <div class="auto-item">
+                            <p>English</p>
+                        </div>
+                    </div> -->
+                </div> 
+
+                <div class="search-what col-xs-12">
+                    <label class = "navbr-brand">where</label>
+                    <input type="text" name="q" class="form-control" />
+
+                    <!-- <div class="auto-complete-what hidden">
+                        <div class="auto-item">
+                            <p>Engineering</p>
+                        </div>
+                        <div class="auto-item">
+                            <p>English</p>
+                        </div>
+                    </div> -->
+                </div>
+
+
+                <div class="find-button col-xs-12">
+                    <label class="not-visible">caption</label>
+                    <button type="submit" class="form-control blue">Find Jobs</button>
+                    <!-- <span><a href="">Advanced Job Search</a></span> -->
+                </div>
+            </form>
+        </div>
+
+
+        
+        <div class="search-results">
+            <div class="container-fluid">
+                <div class="sidebar hidden-xs">
+                    <p> jobs</p>
+                    
+                    <!-- <p>Sort by: <b>Relevance</b> - <a href="#">date</a></p> -->
+
+                    <ul class="drop">
+                        <li>Category</li>        
+                        <ul id = "category" class="short">
+                            <li><a href="?category=and&q=&location=&company=&job_type=&page=1">And (5)</a></li>
+                            <li><a href="?category=Building&q=&location=&company=&job_type=&page=1">Building (7)</a></li>
+                            <li><a href="?category=Management&q=&location=&company=&job_type=&page=1">Management (54)</a></li>
+                            <li><a href="?category=Service&q=&location=&company=&job_type=&page=1">Service (43)</a></li>
+                            <li class = "more" data-toggle = "category">more</li>
+                        </ul> 
+                    </ul>
+
+
+
+                </div>
+                
+                <div class="search-result-content">
+                    <div class="upload-resume hidden-xs hidden">
+                        <a href="#"><i class="fa fa-upload"></i> Upload your resume</a> - <span>Let employers find you</span>
+                        <p class="pull-right">Jobs <span>1</span> to <span>10</span> of <span>364,065</span></p>
+                    </div>
+                    
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.itjobsinnigeria.com/99213/sales-executives-job-at-global-profilers/" target="_blank">Sales Executives Job At Global Profilers</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="2.5"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Global Profilers Is A Recruitment & Hr Services Firm Specialized In Recruitment In Africa; Our Client Who Is A Corporate Solutions And Management </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.itjobsinnigeria.com/100601/it-engineers-job-vacancy-at-pragmaticlink-consulting/" target="_blank">It Engineers Job Vacancy At Pragmaticlink Consulting</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="2.5"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>At Pragmaticlink, We Help You To Develop Mastery In Your Chosen Profession So You Will Continue To Create Job Opportunities Throughout Your Entire Life. You'll </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.itjobsinnigeria.com/99918/sales-consultants-job-at-cones-secure-solutions/#comments" target="_blank">Sales Consultants Job At Cones Secure Solutions</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="2.5"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Cone Secure Solutions Was Established In Nigeria To Provide Advanced Ict Electronic Security And Safety Solutions, In The Area Of Cctv Surveillance, Access </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.jobberman.com/job/428795/business-development-consultant-sappier-group-in-delta/" target="_blank">Business Development Consultant</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="5.7"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Apply For Business Development Consultant At Sappier Group, Delta - Latest Jobs In Sales/business Development Nigeria </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.jobberman.com/job/429115/marketing-executive-northbridge-energy-limited-in-delta/" target="_blank">Marketing Executive</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="5.7"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Apply For Marketing Executive At Northbridge Energy Limited, Delta - Latest Jobs In Sales/business Development Nigeria </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.itjobsinnigeria.com/99928/it-support-officers-job-vacancy-at-kafu-consult-associates/" target="_blank">It Support Officers Job Vacancy At Kafu Consult Associates</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="2.5"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Kafu Consult Associates Is A Wholly Owned Nigerian Indigenous Enterprise Involved In Management Consulting Services, Provision Of Support Services To </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.itjobsinnigeria.com/99675/house-keeping-supervisors-job-at-a-reputable-3-star-hotel/#comments" target="_blank">House Keeping Supervisors Job At A Reputable 3 Star Hotel</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="2.5"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>A 3 Star Hotel, Strategically Located In The Heart Of Ibadan, Seeks Applications From Suitably Candidates For The Position Below: Job Title: House Keeping </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.jobberman.com/job/430908/it-administrator-in-lagos/" target="_blank">It Administrator</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="5.7"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Apply For It Administrator  At Confidential, Lagos - Latest Jobs In Information Technology Nigeria </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.jobberman.com/job/424013/freelance-sales-representative-jimfocug-nigeria-enterprises-in-ekiti/" target="_blank">Freelance Sales Representative</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="5.7"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Apply For Freelance Sales Representative At Jimfocug Nigeria Enterprises, Ekiti - Latest Jobs In Sales/business Development Nigeria </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                        <div class="result-item">
+                            <h4><a href="http://www.jobberman.com/job/430042/marine-advisor-petrorek-in-lagos/" target="_blank">Marine Advisor</a></h4>
+                            
+                                <p> 
+                                    
+                                    
+                                    
+                                    <div class="rating" style="display:inline;" data-score="5.7"></div> 
+                                    
+                                    
+                                    
+                                    
+                                </p>
+                            
+                            <p>Apply For Marine Advisor At Petrorek, Lagos - Latest Jobs In Oil&gas / Mining / Energy Nigeria </p>
+                            <p class="text-muted time-ago" data-date="2015-10-10T00:00:00Z"> <!-- - <a>save job</a> - <a>Email</a> - <a>more</a> --></p>
+                        </div>
+                    
+                    
+                    
+                    
+                    <nav class="hidden-xs">
+                        <ul class="yandex-pagination">
+                            <li class="disabled"><a href="q=&page=1&location=">1</a></li>
+                            <li><a href="/search?q=&page=2&location=">2</a></li>
+                            <li><a href="/search?q=&page=3&location=">3</a></li>
+                            <li><a href="/search?q=&page=4&location=">4</a></li>
+                            <li><a>...</a></li>
+                        </ul>
+                    </nav>
+
+                <nav class="visible-xs">
+                        <ul class="yandex-pagination-single">
+                            <!-- <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li> -->
+                            <li>
+                                <a href="?q=&page=2&location=" aria-label="Next">
+                                    &larr;
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="?q=&page=2&location=" aria-label="Next">
+                                    &rarr;
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+                    <!-- <div class="random-links">
+                        <p>Related Forums: <span><a href="">Engineer</a> - <a href="">Associate</a> - <a>Engineering Technician</a> - <a href="" class="text-muted">more</a> </span></p>
+                        <p>Salaries: <span><a href="">Engineer Salary</a> - <a href="">Associate Salary</a> - <a>Engineering Technician Salary</a> - <a href="" class="text-muted">more</a> </span></p>
+                    </div> -->
+                    
+                </div>
+                
+                <div class="right-side">
+                    <div id="subscribe-box">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        
+
+
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+        
+    <script type="text/javascript">
+        $(function(){
+            $('div.rating').raty({
+                path:"https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/images",
+              readOnly: true,
+              score: function() {
+                return $(this).attr('data-score');
+
+              }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    <script type="text/jsx" src="/static/js/scripts/components-production.js"></script>
+    <script type="text/jsx">
+        React.render(<Subscribe country="Nigeria" />, document.getElementById("subscribe-box"));
+    </script>
+    <script type="text/jsx">
+        $(function(){
+            $(".time-ago").each(function(i, element){
+                var date = $(element).attr("data-date")
+                React.render(<TimeBox date={date} />, element);
+            })
+        })
+    </script>
+
+    <!-- /*
+    | Hot fix script for Jobsmaster
+    | By Emeka Osuagwu
+    | emekaosuagwuandela@gmail.com
+    | Created Hide and Show plugin for unorder list
+    */ -->
+    <script>
+        $(document).ready(function(){
+                
+            $('.more').click(function () 
+            {
+                var data = $(this).attr('data-toggle');
+                $('#'+ data).addClass('long');
+                $(this).hide();
+            })
+        });
+    </script>
+
+
+
+
+    </body>
+</html>
